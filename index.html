@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte e Futuro Sustentável</title>
+    <style>
+        /* Cores e Estilos Gerais */
+        :root {
+            --verde-escuro: #1b4332;
+            --verde-principal: #2d6a4f;
+            --verde-claro: #52b788;
+            --verde-folha: #74c69d;
+            --bege-fundo: #f4f9f4;
+            --branco: #ffffff;
+            --cinza-escuro: #2b2d42;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bege-fundo);
+            color: var(--cinza-escuro);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho com imagem de fundo do agricultor */
+        header {
+            background: linear-gradient(rgba(27, 67, 50, 0.75), rgba(27, 67, 50, 0.85)), 
+                        url('https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover;
+            color: var(--branco);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Seções de Texto */
+        section {
+            background: var(--branco);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--verde-principal);
+        }
+
+        h2 {
+            color: var(--verde-escuro);
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        /* Estilo das Imagens do Conteúdo */
+        .img-conteudo {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Sistema do Quiz interativo */
+        .quiz-container {
+            background: var(--verde-escuro);
+            color: var(--branco);
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+
+        .quiz-container h2 {
+            color: var(--verde-folha);
+        }
+
+        .pergunta {
+            margin-bottom: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .pergunta p {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .opcoes button {
+            display: block;
+            width: 100%;
+            background: var(--branco);
+            color: var(--verde-escuro);
+            border: none;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            text-align: left;
+        }
+
+        .opcoes button:hover {
+            background: var(--verde-claro);
+            color: var(--branco);
+        }
+
+        .resultado {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 1.05rem;
+            padding: 8px;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .correto {
+            background-color: #2a9d8f;
+            color: white;
+            display: block;
+        }
+
+        .incorreto {
+            background-color: #e63946;
+            color: white;
+            display: block;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--verde-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agro Forte e Futuro Sustentável</h1>
+        <p>O equilíbrio perfeito entre a alta produtividade do campo e a preservação do meio ambiente.</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>O Agronegócio Moderno e a Força da Agricultura</h2>
+            <p>A agricultura é uma das bases mais importantes da nossa economia e da segurança alimentar do planeta. O agronegócio moderno vai muito além de plantar e colher; ele envolve uma cadeia complexa que conecta o trabalhador do campo à mesa das cidades. Hoje, o grande desafio e foco do setor é produzir em larga escala para alimentar uma população mundial crescente, sem esgotar os recursos naturais essenciais, como a água e o solo.</p>
+            
+            <img class="img-conteudo" src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&q=80&w=1000" alt="Plantação agrícola sustentável">
+        </section>
+
+        <section>
+            <h2>Tecnologia que Transforma a Rotina do Produtor Rural</h2>
+            <p>A tecnologia tornou-se a maior aliada do agricultor moderno. Ferramentas como tratores guiados por GPS, drones de monitoramento e sensores de umidade do solo permitem uma gestão precisa da lavoura. Com essas inovações, o produtor consegue identificar pragas rapidamente, aplicar fertilizantes apenas nos locais necessários e economizar água. Essa "agricultura de precisão" reduz custos operacionais e evita desperdícios prejudiciais ao ecossistema.</p>
+        </section>
+
+        <section>
+            <h2>Práticas de Equilíbrio no Campo</h2>
+            <p>Para garantir um futuro sustentável, o campo adota técnicas fundamentais de manejo. O Plantio Direto (que mantém a palha da colheita anterior para proteger o solo), a Rotação de Culturas e a Integração Lavoura-Pecuária-Floresta (ILPF) são exemplos práticos disso. Essas ações evitam a erosão da terra, aumentam a biodiversidade local e ajudam a sequestrar o carbono da atmosfera, provando que é plenamente possível produzir de forma sustentável.</p>
+            
+            <img class="img-conteudo" src="https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?auto=format&fit=crop&q=80&w=1000" alt="Tecnologia e cuidado no campo">
+        </section>
+
+        <section>
+            <h2>A Importância da FAEP no Apoio ao Produtor</h2>
+            <p>A Federação da Agricultura do Estado do Paraná (FAEP) desempenha um papel indispensável nessa jornada. Ela atua diretamente na defesa dos interesses dos produtores rurais, oferecendo cursos de capacitação técnica, treinamentos e orientações sobre leis ambientais. Através do SENAR, a FAEP leva conhecimento gratuito ao homem do campo, ensinando desde o uso correto de novas tecnologias até as práticas de preservação ambiental que valorizam a propriedade.</p>
+        </section>
+
+        <div class="quiz-container">
+            <h2>Testes seus Conhecimentos!</h2>
+            <p style="text-align: left; margin-bottom: 20px;">Clique na resposta que você acha correta para ver o resultado na hora.</p>
+
+            <div class="pergunta">
+                <p>1. Qual das seguintes opções é um exemplo de tecnologia usada na agricultura de precisão?</p>
+                <div class="opcoes">
+                    <button onclick="verificarResposta(this, false, 'p1-res')">A) Uso de ferramentas exclusivamente manuais.</button>
+                    <button onclick="verificarResposta(this, true, 'p1-res')">B) Drones para monitoramento de pragas e sensores de solo.</button>
+                    <button onclick="verificarResposta(this, false, 'p1-res')">C) Plantio sem nenhum critério de espaço ou dados.</button>
+                </div>
+                <div id="p1-res" class="resultado"></div>
+            </div>
+
+            <div class="pergunta">
+                <p>2. Como a FAEP ajuda diretamente o produtor rural no dia a dia?</p>
+                <div class="opcoes">
+                    <button onclick="verificarResposta(this, false, 'p2-res')">A) Vendendo sementes e maquinários agrícolas pesados.</button>
+                    <button onclick="verificarResposta(this, false, 'p2-res')">B) Comprando toda a produção de grãos do estado.</button>
+                    <button onclick="verificarResposta(this, true, 'p2-res')">C) Oferecendo cursos de capacitação, treinamentos e assessoria jurídica.</button>
+                </div>
+                <div id="p2-res" class="resultado"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Agro Forte e Futuro Sustentável. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function verificarResposta(botao, acerto, idResultado) {
+            const divResultado = document.getElementById(idResultado);
+            
+            if (acerto) {
+                divResultado.textContent = "Parabéns, você acertou! 🎉";
+                divResultado.className = "resultado correto";
+            } else {
+                divResultado.textContent = "Resposta errada. Tente novamente! ❌";
+                divResultado.className = "resultado incorreto";
+            }
+        }
+    </script>
+</body>
+</html>
